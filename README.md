@@ -8,8 +8,8 @@ Crypto Price Tracker is a Node.js-based application that fetches the current pri
 
 - **Fetch Crypto Data**: Automatically fetches crypto data for Bitcoin, Ethereum, and Matic every 2 hours.
 - **API Endpoints**:
-  - '/stats?coin=<coin>': Retrieves the latest price, market cap, and 24h change for the specified coin.
-  - '/deviation?coin=<coin>': Calculates and returns the standard deviation of the price for the last 100 records of the specified coin.
+  - `/stats?coin=<coin>`: Retrieves the latest price, market cap, and 24h change for the specified coin.
+  - `/deviation?coin=<coin>`: Calculates and returns the standard deviation of the price for the last 100 records of the specified coin.
 - **MongoDB Integration**: Saves fetched crypto data to MongoDB for future retrieval and statistical calculations.
 - **Cron Jobs**: Uses cron jobs to schedule periodic data fetching.
 
