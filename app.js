@@ -18,6 +18,12 @@ mongoose
 app.use('/stats', statsRoute);
 app.use('/deviation', deviationRoute);
 
+app.get('/', (req,res) => {
+    res.json({
+        message : "Hi there"
+    })
+})
+
 cron.schedule('0 */2 * * *', fetchCryptoData);
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
